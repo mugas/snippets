@@ -74,7 +74,16 @@ select {
   font: inherit;
 }
 
+/*Header*/
+h1 {
+  text-align: center;
+  color: #28430a;
+}
+
 /*First Navbar*/
+.visuallyhidden {
+  display: none;
+}
 .container {
   display: flex;
   padding: 0;
@@ -100,7 +109,7 @@ li > a {
 }
 
 .search-input {
-  background: #ff6e68;
+  background: #7f471b;
   border: 0;
   width: 100%;
   outline: 0;
@@ -117,7 +126,7 @@ li > a {
 }
 
 .container > li {
-  background-color: #d53e1e;
+  background-color: #7f471b;
 }
 
 @media all and (max-width: 600px) {
@@ -149,7 +158,7 @@ li > a {
 
 .container__one > li {
   font-size: 1.5em;
-  color: #397e14;
+  color: #28430a;
   padding: 10px;
 }
 
@@ -184,12 +193,12 @@ li > a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #bddf13;
+  background-color: #28430a;
 }
 
 .container__two > li {
   font-size: 1.5em;
-  color: #2a0515;
+  color: white;
   padding: 10px;
 }
 
@@ -294,7 +303,12 @@ li > a {
   margin-right: 2%;
 }
 @media (max-width: 567px) {
+  .name {
+    text-align: center;
+  }
   .footer {
+    display: flex;
+    flex-direction: column;
     padding: 1.2rem 0;
     position: relative;
     right: 0;
@@ -319,6 +333,7 @@ li > a {
 }
 .social-media {
   display: flex;
+  justify-content: center;
   padding-left: 0;
 }
 

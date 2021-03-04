@@ -13,24 +13,29 @@
     <title>Navbars</title>
   </head>
   <body>
+    <header><h1>Navbars</h1></header>
 
   <nav>
     <ul class="container">
-      <li class="home"><a href="#">Home</a>
+      <li class="home"><a href="#" aria-label="Main">Home</a>
         </li>
-      <li><a href="#">Blog</a>
+      <li><a href="#"aria-label="blog">Blog</a>
         </li>
-      <li><a href="#">Customers</a>
+      <li><a href="#" aria-label="customers">Customers</a>
         </li>
-      <li class="search"><input type="text" class="search-input" placeholder="Search"></li>
-      <li><a href="#">Login</a>
+      <li class="search">
+        <label id="search" for="search" class="visuallyhidden" tabindex="-1">Search: </label>
+        <input aria-labelledby="search" type="text" name="search" id="searching" class="search-input" placeholder="Search">
+      
+      </li>
+      <li><a href="#" aria-label="Login">Login</a>
         </li>
     </ul>
   </nav>
 
   <nav>
     <ul class="container__one">
-      <li class="logo"><a href="#"><img src="./assets/logo.svg" alt=""></a></li>
+      <li class="logo"><a href="#"><img src="./assets/logo.svg" alt="logo" aria-label="Logo"></a></li>
       <li class="right">Products</li>
       <li>Shopcart</li>
       <li class="last">Blog</li>
@@ -39,7 +44,7 @@
 
   <nav>
     <ul class="container__two">
-      <li class="logo__second"><a href="#"><img src="./assets/logo.svg" alt=""></a></li>
+      <li class="logo__second"><a href="#" aria-label="Logo"><img src="./assets/logo.svg" alt="logo"></a></li>
       <li>Products</li>
       <li>Shopcart</li>
       <li class="right__two">Blog</li>
@@ -48,16 +53,16 @@
 
   <nav class="container__three">
     <ul class="container__three__links">
-      <li class="logo"><a href="#"><img src="./assets/logo.svg" alt=""></a></li>
+      <li class="logo"><a href="#" aria-label="Logo"><img src="./assets/logo.svg" alt="logo"></a></li>
       <li>Products</li>
       <li>Home</li>
       <li>Shopcart</li>
       <li>Blog</li>
     </ul>
     <ul class="container__three__social">
-      <li class="social"><a href="#"><i class="fab fa-facebook"></i></a></li>
-      <li class="social"><a href="#"><i class="fab fa-twitter"></i></a></li>
-      <li class="social last-icon"><a href="#"><i class="fab fa-instagram"></i></a></li>
+      <li class="social"><a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a></li>
+      <li class="social"><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+      <li class="social last-icon"><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
     </ul>
   </nav>
 
@@ -68,37 +73,38 @@
       <li>Shopcart</li>
       <li class="right__two">Blog</li>
     </ul>
-    <a class="logo__second hide-menu" href="#"><img src="./assets/logo.svg" alt=""></a>
+    <a class="logo__second hide-menu" href="#" aria-label="Logo"><img src="./assets/logo.svg" alt=""></a>
   </nav>
 
   <footer class="footer">
-    <section class="name">
-     Good Stuff Creations 
+    <section >
+      <p class="name">Good Stuff Creations </p>
+     
     </section>
     <nav>
       <ul class="social-media">
         <li class="my-social-media">
-          <a href="https://twitter.com/mugas11">
+          <a href="https://twitter.com/mugas11" aria-label="Twitter">
             <i class="fab fa-twitter"></i>
           </a>
         </li>
         <li class="my-social-media">
-          <a href="https://www.instagram.com/gs_codes/" target="_blank">
+          <a href="https://www.instagram.com/gs_codes/" target="_blank" aria-label="Instagram">
             <i class="fab fa-instagram"></i>
           </a>
         </li>
         <li class="my-social-media">
-          <a href="https://github.com/mugas" target="_blank">
+          <a href="https://github.com/mugas" target="_blank" aria-label="Github">
             <i class="fab fa-github"></i>
           </a>
         </li>
         <li class="my-social-media">
-          <a href="https://www.linkedin.com/in/ricardodmoreira/" target="_blank">
+          <a href="https://www.linkedin.com/in/ricardodmoreira/" target="_blank" aria-label="Linkedin">
             <i class="fab fa-linkedin"></i>
           </a>
         </li>
         <li class="my-social-media">
-          <a href="http://gscreations.io/" target="_blank">
+          <a href="http://gscreations.io/" target="_blank" aria-label="website ">
             <i class="fas fa-globe"></i>
           </a>
         </li>
